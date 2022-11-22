@@ -22,7 +22,6 @@ import {
   Editor,
   Line,
 } from "./pages";
-import "./App.css";
 import { useStateContext } from "./contexts/ContextProvider";
 
 function App() {
@@ -32,10 +31,12 @@ function App() {
     setThemeSettings,
     currentColor,
     setModeMain,
+    setColorMain,
   } = useStateContext();
 
   useEffect(() => {
     setModeMain();
+    setColorMain();
   }, []);
 
   return (
@@ -104,6 +105,7 @@ function App() {
                 <Route path="/stacked" element={<Stacked />} />
               </Routes>
             </div>
+            <Footer />
           </div>
         </div>
       </BrowserRouter>

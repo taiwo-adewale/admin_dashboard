@@ -1,14 +1,10 @@
-@import "../node_modules/@syncfusion/ej2-icons/styles/material.css";
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"); */
-
-/* * {
-  outline: 1px solid red;
-} */
 
 body {
   margin: 0;
@@ -26,12 +22,6 @@ body {
   z-index: 10000;
 }
 
-/* @media screen and (max-width: 800px) {
-  .sidebar {
-    z-index: 10000000;
-  }
-} */
-
 .e-dlg-center-center,
 .e-quick-popup-wrapper.e-device {
   z-index: 1000000 !important;
@@ -48,10 +38,6 @@ body {
 
 ::-webkit-scrollbar-track {
   background-color: transparent;
-}
-
-#area-chart_chart_legend_g {
-  @apply dark:!stroke-[#808080];
 }
 
 /* color-picker style  */

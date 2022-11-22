@@ -2,7 +2,7 @@ import React from "react";
 import { BsCurrencyDollar } from "react-icons/bs";
 import { GoPrimitiveDot } from "react-icons/go";
 
-import { Stacked, Pie, Button, SparkLine } from "../components";
+import { StackedChart, Button, SparkLine } from "../components";
 import { useStateContext } from "../contexts/ContextProvider";
 import {
   earningData,
@@ -14,7 +14,7 @@ const Ecommerce = () => {
   const { currentColor } = useStateContext();
 
   return (
-    <div className="mt-12">
+    <div className="mt-20 mb-8">
       <div className="flex flex-wrap lg:flex-nowrap justify-center">
         <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg h-44 rounded-xl w-full lg:w-80 p-8 pt-9 m-3 bg-hero-pattern bg-no-repeat bg-cover bg-center">
           <div className="flex justify-between items-center">
@@ -125,7 +125,7 @@ const Ecommerce = () => {
             </div>
 
             <div>
-              <Stacked width="320px" height="360px" />
+              <StackedChart width="320px" height="360px" />
             </div>
           </div>
         </div>
